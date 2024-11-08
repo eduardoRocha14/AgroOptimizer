@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-frame {
+    width: 100%;
+    height: 150px;
+    border: none; 
+    overflow: hidden;
+    display: block; 
+    margin: 0; 
+    padding: 0;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centro {
+    width: 100%;
+    min-height: 1346px; 
+    background: linear-gradient(to bottom, #FBD585 17%, #FFFFFF 100%);
+    display: block;
+    padding: 20px;
+}
+
+.centro-principal {
+    width: 100%;
+    height: 600px;
+    margin-top: 20px; 
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    position: relative;
+}
+
+.video-apresentacao {
+    position: absolute;  
+    right: 0;            
+    width: 50%;          
+    height: 80%;         
+    margin-right: 20px;  
+}
+
+.video-apresentacao iframe {
+    width: 100%;  
+    height: 100%; 
+}
+
+.titulo-subtitulo {
+    width: 45%; 
+    height: 80%;
+    margin-left: 20px; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+}
+
+.titulo h1 {
+    font-size: 3rem; 
+    font-family: 'Arial', sans-serif; 
+    font-weight: bold;
+    color: #2e5902; 
+    margin-bottom: 10px; 
+    line-height: 1.2; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.subtitulo h2 {
+    font-size: 1.5rem; 
+    font-family: 'Arial', sans-serif;
+    font-weight: normal; 
+    color: #555; 
+    margin-bottom: 20px; 
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); 
+}
+
+.botao-saibaMais p {
+    font-size: 1.2rem; 
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #fff; 
+    background-color: #2e5902; 
+    padding: 10px 20px; 
+    border-radius: 25px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    margin-top: 20px; 
+}
+
+.botao-saibaMais p:hover {
+    background-color: #63bf04; 
+    transform: scale(1.05); 
+}
+
+.tabela-funcionalidade {
+    width: 100%; /* Garante que ocupe toda a largura disponível */
+    height: 550px; /* Altura de 550px como solicitado */
+    margin-top: 30px; /* Distância do centro, ajustável conforme necessário */
+    border: 2px solid #000; /* Borda preta para destacar a área */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #f8f8f8; /* Cor de fundo clara para contrastar com a borda */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombras suaves para dar profundidade */
+}
+
+
+
+.footer-frame {
+    width: 100%;
+    height: 150px;
+    border: none; 
+    overflow: hidden;
+}
