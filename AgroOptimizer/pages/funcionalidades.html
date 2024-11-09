@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Optimizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <img src="logo.jpg" alt="Logo Agro Optimizer">
+        <div>
+            <a href="#">Home</a>
+            <a href="#">Funcionalidades</a>
+            <a href="#">Fale Conosco</a>
+        </div>
+    </div>
+
+    <div class="tabs">
+        <button onclick="scrollToSection('gestao')" id="btn-gestao">Gestão de Produção e Insumos</button>
+        <button onclick="scrollToSection('planejamento')" id="btn-planejamento">Planejamento de Colheita</button>
+        <button onclick="scrollToSection('redistribuicao')" id="btn-redistribuicao">Redistribuição e Aproveitamento de Alimentos Descartados</button>
+        <button onclick="scrollToSection('plataforma')" id="btn-plataforma">Plataforma de Venda</button>
+    </div>
+
+    <div class="content">
+        <div class="back" id="gestao">
+            <div class="title">Gestão de Produção e Insumos</div>
+            <div class="text-content">
+                <p>Chega de complicação para cuidar da sua produção! Com a nossa funcionalidade...</p>
+            </div>
+        </div>
+
+        <div class="back" id="planejamento">
+            <div class="title">Planejamento de Colheita</div>
+            <div class="text-content">
+                <p>Planejar a colheita nunca foi tão simples! Nossa ferramenta de Planejamento...</p>
+            </div>
+        </div>
+
+        <div class="back" id="redistribuicao">
+            <div class="title">Redistribuição e Aproveitamento de Alimentos Descartados</div>
+            <div class="text-content">
+                <p>Imagine transformar o que antes era descartado em lucro! Com nossa funcionalidade...</p>
+            </div>
+        </div>
+
+        <div class="back" id="plataforma">
+            <div class="title">Plataforma de Venda</div>
+            <div class="text-content">
+                <p>Chegou a hora de levar sua produção para mais longe! Com nossa Plataforma de Venda...</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <span>Agro Optimizer</span>
+            </div>
+            <div class="footer-center">
+                <span>Sobre</span>
+                <a href="#">Sobre Nós</a>
+                <a href="#">Blog</a>
+            </div>
+            <div class="footer-right">
+                <span>Redes Sociais</span>
+                <a href="#"><img src="instagram.jpg" alt="Instagram" class="social-icon"></a>
+                <a href="#"><img src="youtube.jpg" alt="YouTube" class="social-icon"></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function scrollToSection(sectionId) {
+        document.querySelectorAll('.tabs button').forEach(button => button.classList.remove('active'));
+        document.getElementById(`btn-${sectionId}`).classList.add('active');
+        
+        const section = document.getElementById(sectionId);
+        const offset = section.getBoundingClientRect().top + window.scrollY - 60;
+        window.scrollTo({ top: offset, behavior: 'smooth' });
+    }
+
+    window.addEventListener('scroll', () => {
+        const sections = ['gestao', 'planejamento', 'redistribuicao', 'plataforma'];
+        let currentSection = '';
+
+        sections.forEach(sectionId => {
+            const section = document.getElementById(sectionId);
+            if (section.getBoundingClientRect().top >= 0 && section.getBoundingClientRect().top < window.innerHeight / 2) {
+                currentSection = sectionId;
+            }
+        });
+
+        if (currentSection) {
+            document.querySelectorAll('.tabs button').forEach(button => button.classList.remove('active'));
+            document.getElementById(`btn-${currentSection}`).classList.add('active');
+        }
+    });
+    </script>
+</body>
+</html>
