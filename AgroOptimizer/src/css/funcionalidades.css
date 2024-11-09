@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom left, #FFFFFF, #FBD585);
+    overflow-x: hidden;
+}
+
+.navbar {
+    background: linear-gradient(to bottom left, #63BF04, #2E5902);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar img {
+    height: 40px;
+    margin-right: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.tabs {
+    display: flex;
+    background-color: #e5cd99;
+    justify-content: space-around;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 60px;
+    z-index: 1000;
+}
+
+.tabs button {
+    background: none;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.tabs button.active {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+.content {
+    padding-top: 140px;
+    margin-bottom: 20px;
+}
+
+.back {
+    background-color: #a1be82;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 27px auto;
+    max-width: 1000px;
+    width: calc(100% - 40px);
+}
+
+.title {
+    background-color: #eec469;
+    height: 50px;
+    width: 250px;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.text-content {
+    background-color: #7EA258;
+    padding: 20px;
+    color: black;
+}
+
+.footer {
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1;
+    text-align: center;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 5px 10px;
+}
+
+.footer-right .social-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
