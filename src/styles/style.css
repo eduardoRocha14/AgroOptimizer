@@ -1,0 +1,60 @@
+.custom-navbar {
+    background: linear-gradient(to bottom left, #63BF04, #2E5902);
+}
+.nav-link{
+    color: white;
+}
+body {
+    background: linear-gradient(to bottom, #fffacd, #98fb98);
+}
+.navbar-brand img {
+    width: 150px;
+}
+
+.card {
+    background-color: #d4edda;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background: #004d00;
+    font-size: 0.9rem;
+}
+
+footer h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+footer p {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #c2f0c2;
+}
+
+footer i {
+    transition: transform 0.3s;
+}
+
+footer i:hover {
+    transform: scale(1.2);
+}

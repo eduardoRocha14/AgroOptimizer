@@ -1,0 +1,202 @@
+.custom-navbar {
+    background: linear-gradient(to bottom left, #63BF04, #2E5902);
+}
+.nav-link{
+    color: white;
+}
+body {
+    background: linear-gradient(to bottom, #fffacd, #98fb98);
+}
+.navbar-brand img {
+    width: 150px; 
+}
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centro {
+    width: 100%;
+    min-height: 1346px; 
+    background: linear-gradient(to bottom, #FBD585 17%, #FFFFFF 100%);
+    display: block;
+    padding: 20px;
+}
+
+.centro-principal {
+    width: 100%;
+    height: 600px;
+    margin-top: 20px; 
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    position: relative;
+}
+
+.video-apresentacao {
+    position: absolute;  
+    right: 0;            
+    width: 50%;          
+    height: 80%;         
+    margin-right: 20px;  
+}
+
+.video-apresentacao iframe {
+    width: 100%;  
+    height: 100%; 
+}
+
+.titulo-subtitulo {
+    width: 45%; 
+    height: 80%;
+    margin-left: 20px; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+}
+
+.titulo h1 {
+    font-size: 3rem; 
+    font-family: 'Arial', sans-serif; 
+    font-weight: bold;
+    color: #2e5902; 
+    margin-bottom: 10px; 
+    line-height: 1.2; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.subtitulo h2 {
+    font-size: 1.5rem; 
+    font-family: 'Arial', sans-serif;
+    font-weight: normal; 
+    color: #555; 
+    margin-bottom: 20px; 
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); 
+}
+
+.botao-saibaMais p {
+    font-size: 1.2rem; 
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #fff; 
+    background-color: #2e5902; 
+    padding: 10px 20px; 
+    border-radius: 25px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    margin-top: 20px; 
+}
+
+.botao-saibaMais p:hover {
+    background-color: #63bf04; 
+    transform: scale(1.05); 
+}
+
+.tabela-funcionalidade {
+    width: 100%; 
+    height: 550px; 
+    margin-top: 30px; 
+    
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tab-titles {
+    display: flex;
+    justify-content: space-around;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.tab-title {
+    padding: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.tab-title:hover,
+.tab-title.active {
+    background-color: #45a049;
+}
+
+
+.tab-content {
+    text-align: center;
+    padding: 15px;
+}
+
+.tab-content img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.tab-content p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.btn-saibaMais {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #2e5902;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-saibaMais:hover {
+    background-color: #63bf04;
+}
+footer {
+    background: #004d00;
+    font-size: 0.9rem;
+}
+
+footer h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+footer p {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #c2f0c2;
+}
+
+footer i {
+    transition: transform 0.3s;
+}
+
+footer i:hover {
+    transform: scale(1.2);
+}
