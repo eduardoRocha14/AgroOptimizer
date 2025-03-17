@@ -87,7 +87,7 @@ const Home = () => {
                   <h2>Soluções inovadoras para otimizar sua produtividade e reduzir custos na agricultura</h2>
                 </div>
                 <div className="botao-saibaMais">
-                  <Link to="/sobre"><p>Saiba mais </p></Link>
+                  <Link to="/sobre className='youtube'"><p>Saiba mais </p></Link>
                 </div>
               </div>
             </div>
